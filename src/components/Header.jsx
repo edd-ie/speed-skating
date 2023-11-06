@@ -7,12 +7,14 @@ export default function Header() {
 
     return (
     <div className="Header">
-        <div className="iconHead" onClick={()=>{console.log("OK")}}></div>
+        <Link to="/">
+            <div className="iconHead" onClick={()=>{console.log("OK")}}></div>
+        </Link>
         <ul className="nav">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/">Schedule</Link></li>
             <li><Link to="/">Tutorials</Link></li>
-            <li><Link to="/">Volunteer</Link></li>
+            <li><Link to="/volunteer">Volunteer</Link></li>
             <li><Link to="/">About</Link></li>
         </ul>
     </div>

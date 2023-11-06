@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Styles/Volunteer.css'
+import Header from "../Header";
 
 export default function Volunteer() {
 
@@ -52,6 +53,7 @@ export default function Volunteer() {
 
     return(
         <div className="volunteer">
+            <Header />
             <form action="submit" className="register" onSubmit={handleSignup}>
                 <h1 className="formHead">Registration</h1>
                 <label htmlFor="Name">Name:</label>
