@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Home from './components/Home'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import Volunteer from './components/Directory/Volunteer'
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
       {
         path: "/",
         element: <Home/>
+      },
+      {
+        path: "/volunteer",
+        element: <Volunteer/>
       }
     ]
   )

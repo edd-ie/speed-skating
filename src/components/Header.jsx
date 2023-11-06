@@ -10,10 +10,10 @@ export default function Header() {
         <div className="iconHead" onClick={()=>{console.log("OK")}}></div>
         <ul className="nav">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/chat">Schedule</Link></li>
-            <li><Link to="/art">Tutorials</Link></li>
-            <li><Link to="/book">Volunteer</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/">Schedule</Link></li>
+            <li><Link to="/">Tutorials</Link></li>
+            <li><Link to="/">Volunteer</Link></li>
+            <li><Link to="/">About</Link></li>
         </ul>
     </div>
   );

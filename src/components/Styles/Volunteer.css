@@ -1,0 +1,62 @@
+.volunteer{
+    background: #060707;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.register label {
+    position: relative;
+    align-self: flex-start;
+    margin-top: 5%;
+    margin-left: 58px;
+}
+
+.formHead {
+    align-self: center;
+}
+
+.register input{
+    position: relative;
+    width: 70%;
+    margin-bottom: 2%;
+    align-self: center;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+}
+
+#signup{
+    margin-top:20px;
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    border-radius: 9px;
+    background: #99FFFF;
+    color: rgb(17, 17, 17);
+    font-size: medium;
+    align-self: center;
+}
+
+#signup:hover{
+    border: 2px solid black;
+    color: #99FFFF;
+    background: rgb(17, 17, 17);
+}
+
+
+
+

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from './Header'
 import './Styles/Home.css'
 import timelapse from '../assets/SpeedSkating.mp4'
+import { Link } from "react-router-dom";
 
 export default function Home() {
+
+  
 
     return (
     <div className="Home">
@@ -15,9 +18,11 @@ export default function Home() {
               <div className="option">
                 <h1>Tutorials</h1>
               </div>
-              <div className="option">
-                <h1>Volunteer</h1>
-              </div>
+              <Link to="/volunteer">
+                <div className="option">
+                  <h1>Volunteer</h1>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
