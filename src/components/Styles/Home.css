@@ -29,12 +29,21 @@
 }
 
 .schedule{
-    background: white;
-    width: 230px;
-    height: 230px;
+    background: rgba(5, 5, 5, 0.637);
+    width: 180px;
+    height: 180px;
     margin-left: 82vw;
     margin-top: 4vh;
     border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.schedule p{
+    margin: 0;
+    margin-bottom: 10%;
 }
 
 .selection{

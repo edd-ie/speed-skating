@@ -4,7 +4,7 @@ import Header from "../Header";
 
 export default function Volunteer() {
 
-    let [data, setData] = useState({});
+    let [data, setData] = useState([]);
 
     function checkDay() {
         let inputDate = new Date(document.getElementById('myDate').value);
@@ -15,7 +15,8 @@ export default function Volunteer() {
 
         // JavaScript counts Sunday as 0, Monday as 1, and so on.
         if(inputDate < today || inputDate > twoMonthsLater) { // not within the allowed date range
-            alert("Please select a date that is no earlier than today and no later than two months from today");
+            let response = inputDate < today ? "Can't be living in the past :)" : "We only accommodate upto 2 months in advance :)"
+            alert(response);
             document.getElementById('myDate').value = '';
         } else if(day != 2 && day != 4) {// not Tuesday or Thursday
             alert("Please select a Tuesday or Thursday");
@@ -24,15 +25,21 @@ export default function Volunteer() {
     }
 
 
-    function handleSignup(){
-        setData({
-        name:"Jeeves",
-        phone: 132424,
-        email: 'ae@gmail.com',
-        date: 'thursday'
-        })
-        let dataOut = [[data.name, data.phone, data.email, data.date]]
-        let table = "Test"
+    function handleSignup(e){
+        e.preventDefault();
+        let form = e.target;
+        let name = form[0].value;
+        let email = form[1].value;
+        let date = form[2].value;
+
+        
+        console.log(name, email, date);
+
+        setData([name, email, date]);
+        
+        let dataOut = [[name, email, date]]
+        console.log(dataOut);
+        let table = "Test";
 
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -45,10 +52,13 @@ export default function Volunteer() {
 
         fetch("https://v1.nocodeapi.com/the_user/google_sheets/cBbKgkpOMaLBOEAE?tabId=Test", requestOptions)
             .then(response => response.text())
-            .then(result => console.log(result))
+            .then(result => {
+                alert("Thank you for volunteering!");
+            })
             .catch(error => console.log('error', error));
 
-        alert("Done!")
+        
+        form.reset();
     }
 
     return(
