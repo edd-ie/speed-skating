@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import '../Styles/Volunteer.css'
 import Header from "../Header";
+import emailjs from '@emailjs/browser';
 
 export default function Volunteer() {
 
@@ -32,14 +33,16 @@ export default function Volunteer() {
         let email = form[1].value;
         let date = form[2].value;
 
-        
-        console.log(name, email, date);
+        let mail = {from_name: "SkateNB",
+                    to_name: name,
+                    message: `Your volunteer date is ${date}, thank you!`,
+                    mail: email,
+                    }
 
         setData([name, email, date]);
         
         let dataOut = [[name, email, date]]
-        console.log(dataOut);
-        let table = "Test";
+        let table = "Volunteers";
 
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -50,14 +53,19 @@ export default function Volunteer() {
             body: JSON.stringify(dataOut)
         };
 
-        fetch("https://v1.nocodeapi.com/the_user/google_sheets/cBbKgkpOMaLBOEAE?tabId=Test", requestOptions)
+        fetch(`https://v1.nocodeapi.com/the_user/google_sheets/ShJwVNalyEtpToOE?tabId=${table}`, requestOptions)
             .then(response => response.text())
             .then(result => {
-                alert("Thank you for volunteering!");
+                emailjs.send("service_ge7zqxj","template_f2qqkvu",mail,"RFgxV-_DgxGo4DZ3_")
+                .then((result) => {
+                    alert("Thank you for volunteering!");
+                }, (error) => {
+                    console.log(error.text);
+                });
             })
             .catch(error => console.log('error', error));
 
-        
+
         form.reset();
     }
 
@@ -67,11 +75,11 @@ export default function Volunteer() {
             <form action="submit" className="register" onSubmit={handleSignup}>
                 <h1 className="formHead">Registration</h1>
                 <label htmlFor="Name">Name:</label>
-                <input type="text" placeholder="First Last" />
+                <input name="to_name" type="text" placeholder="First Last" />
                 <label htmlFor="Email">Email:</label>
-                <input type="email" placeholder="email@address.com" />
+                <input name="mail" type="email" placeholder="email@address.com" />
                 <label htmlFor="Date">Date:</label>
-                <input type="date" placeholder="Date" onChange={checkDay} id="myDate" />
+                <input name="date" type="date" placeholder="Date" onChange={checkDay} id="myDate" />
                 <button id="signup" type="submit">Volunteer</button>
             </form>
         </div>
