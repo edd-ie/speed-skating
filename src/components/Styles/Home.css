@@ -1,4 +1,4 @@
-.Home{
+.Home {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -6,29 +6,29 @@
     padding: 0;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
-#timelapse{
+#timelapse {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
-.mainHome{
+.mainHome {
     position: absolute;
     margin-top: 10vh;
     width: 100%;
     height: 90vh;
 }
 
-.schedule{
+.schedule {
     background: rgba(5, 5, 5, 0.637);
     width: 180px;
     height: 180px;
@@ -41,12 +41,12 @@
     color: white;
 }
 
-.schedule p{
+.schedule p {
     margin: 0;
     margin-bottom: 10%;
 }
 
-.selection{
+.selection {
     width: 100%;
     height: 20vh;
     margin-top: 10vh;
@@ -56,7 +56,7 @@
     align-items: center;
 }
 
-.option{
+.option {
     width: 240px;
     height: 80px;
     border: 3px solid rgb(255, 255, 255);
@@ -67,25 +67,84 @@
 }
 
 
-h1{
+.option h1 {
     padding: 0;
     margin-top: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.option:hover{
+.option:hover {
     cursor: pointer;
     color: black;
     background: white;
 }
 
-@media only screen and (max-width: 600px) {
-    #timelapse {
+@media screen and (max-width: 900px) {
+    #timelapse{
+        display: none;
+    }
+    
+    .Home{
+        width: 100vw;
+    }
+    .overlay{
+        position: absolute;
         width: 100vw;
         height: 100vh;
-        object-fit: cover;
+    }
+    .mainHome{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background: rgb(8, 8, 8);
+    }
+
+    .schedule{
+        position: relative;
+        margin: 0;
+        margin-top: 2vh;
+        margin-left: 10vw;
+        width: 80vw;
+        height: 25vh;
+        background: white;
+        color: black;
+        font-size: 19px;
+    }
+
+    .schedule p {
+        margin: 0;
+        margin-bottom: 4%;
+    }
+
+    .selection{
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 10vh;
+        margin-top: 20vh;
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        align-items: center;
+    }
+
+    .option {
+        width: 200px;
+        height: 50px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 9px;
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+
+    .option h1 {
+        padding: 0;
+        margin-top: 5px;
     }
 }

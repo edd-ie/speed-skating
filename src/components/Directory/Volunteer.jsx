@@ -71,7 +71,6 @@ export default function Volunteer() {
 
     return(
         <div className="volunteer">
-            <Header />
             <form action="submit" className="register" onSubmit={handleSignup}>
                 <h1 className="formHead">Registration</h1>
                 <label htmlFor="Name">Name:</label>
@@ -82,6 +81,7 @@ export default function Volunteer() {
                 <input name="date" type="date" placeholder="Date" onChange={checkDay} id="myDate" />
                 <button id="signup" type="submit">Volunteer</button>
             </form>
+            <Header />
         </div>
     )
 }

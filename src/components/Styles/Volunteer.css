@@ -57,6 +57,39 @@
     background: rgb(17, 17, 17);
 }
 
+@media screen and (max-width: 900px) {
+    .volunteer{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .register{
+        position: relative;
+        width: 85%;
+        height: 70%;
+    }
+
+    .register label{
+        margin-left: 10%;
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+
+    .register input{
+        width: 80%;
+    }
+
+    #signup{
+        width: 60%;
+        height: 10%;
+        font-size: 30px;
+        border: 1px solid black;
+        margin-top: 15%;
+    }
+}
 
 
 
