@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     top: 0;
-
 }
 
 .iconHead {
@@ -47,24 +46,17 @@
     color: white;
     position: relative;
     z-index: 1;
+    cursor: p;
 }
 
 .nav a:hover {
     color: black;
-}
-
-.nav a::after {
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0px;
+    background: white;
+    color: black;
     border-radius: 8px;
-    background-color: rgba(10, 240, 240, 7);
-    z-index: -1;
     transition: 0.5s;
 }
+
 
 .nav a:hover:after {
     color: black;
@@ -114,8 +106,6 @@
         color: black;
     }
 
-    .iconHead{
-    }
 
     .inactive {
         display: none;

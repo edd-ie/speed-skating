@@ -17,11 +17,7 @@ export default function Home() {
     }
   });
 
-  // Get the current day of the week
-  // const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-  // const day = days[date.getDay()];
 
-  // Get the current time
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const time = `${hours}:${minutes < 10 ? '0' + minutes : minutes}`;

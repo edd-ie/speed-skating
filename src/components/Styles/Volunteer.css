@@ -47,14 +47,19 @@
     border-radius: 9px;
     background: #99FFFF;
     color: rgb(17, 17, 17);
-    font-size: medium;
+    font-size: 20px;
+    font-weight: 500;
     align-self: center;
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 #signup:hover{
-    border: 2px solid black;
+    border: 0;
     color: #99FFFF;
+    font-size: 20px;
     background: rgb(17, 17, 17);
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -80,6 +85,8 @@
 
     .register input{
         width: 80%;
+        height: 30px;
+        border: 1px solid black;
     }
 
     #signup{
@@ -90,6 +97,4 @@
         margin-top: 15%;
     }
 }
-
-
 

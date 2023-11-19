@@ -74,11 +74,11 @@ export default function Volunteer() {
             <form action="submit" className="register" onSubmit={handleSignup}>
                 <h1 className="formHead">Registration</h1>
                 <label htmlFor="Name">Name:</label>
-                <input name="to_name" type="text" placeholder="First Last" />
+                <input name="to_name" type="text" placeholder="First Last" required/>
                 <label htmlFor="Email">Email:</label>
-                <input name="mail" type="email" placeholder="email@address.com" />
+                <input name="mail" type="email" placeholder="email@address.com" required/>
                 <label htmlFor="Date">Date:</label>
-                <input name="date" type="date" placeholder="Date" onChange={checkDay} id="myDate" />
+                <input required name="date" type="date" placeholder="Date" onChange={checkDay} id="myDate" />
                 <button id="signup" type="submit">Volunteer</button>
             </form>
             <Header />
