@@ -34,9 +34,10 @@
     width: 70%;
     margin-bottom: 2%;
     align-self: center;
-    border: none;
-    border-bottom: 1px solid black;
     margin-top: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 #signup{
