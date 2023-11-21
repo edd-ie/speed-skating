@@ -2,4 +2,40 @@
     position: absolute;
     width: 100vw;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+.contentTutor{
+    position: absolute;
+    min-width: 100vw;
+    background: rgb(240, 234, 234);
+    min-height: 100vh;
+    overflow-y: scroll;
+    top: 10%;
+}
+
+.download{
+    border: 1px solid black;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+    background: white;
+}
+
+.download:hover{
+    border: 2px solid rgb(240, 233, 233);
+    transition: ease-in-out .2s;
+    font-weight: bold;
+    background: rgb(10, 10, 10);
+    color: rgb(243, 239, 239);
 }
