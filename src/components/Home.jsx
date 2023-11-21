@@ -34,9 +34,11 @@ export default function Home() {
               <p>Time: {time}</p>
             </div>
             <div className="selection">
-              <div className="option">
-                <h1>Tutorials</h1>
-              </div>
+              <Link to="/tutorial">
+                <div className="option">
+                  <h1>Tutorials</h1>
+                </div>
+              </Link>
               <Link to="/volunteer">
                 <div className="option">
                   <h1>Volunteer</h1>

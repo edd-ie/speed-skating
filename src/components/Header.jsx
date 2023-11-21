@@ -23,6 +23,10 @@ export default function Header() {
         }
     }
 
+    function changeSite(){
+        window.open("https://www.frederictonspeedskating.com/")
+    }
+
     return (
     <div className="Header">
         <Link to="/">
@@ -30,10 +34,10 @@ export default function Header() {
         </Link>
         <ul className="nav inactive" id="navigation">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/">Directions</Link></li>
-            <li><Link to="/">Tutorials</Link></li>
+            <li><Link to="">Directions</Link></li>
+            <li><Link to="/tutorial">Tutorials</Link></li>
             <li><Link to="/volunteer">Volunteer</Link></li>
-            <li><Link to="/">About</Link></li>
+            <li onClick={changeSite}><Link to="">About</Link></li>
             <li id="closeNav" className="large"><Link to="" onClick={handleMenu}>Close</Link></li>
         </ul>
         <span id="menu" className="material-symbols-sharp large" onClick={handleMenu}>

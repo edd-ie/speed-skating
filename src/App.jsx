@@ -3,6 +3,7 @@ import './App.css'
 import Home from './components/Home'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Volunteer from './components/Directory/Volunteer'
+import Tutorial from './components/Directory/Tutorial'
 
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
       {
         path: "/volunteer",
         element: <Volunteer/>
+      },
+      {
+        path: "/tutorial",
+        element: <Tutorial/>
       }
     ]
   )
