@@ -4,12 +4,13 @@
     min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    background: black;
 }
 
 .contentTutor{
     position: absolute;
     min-width: 100vw;
-    background: rgb(240, 234, 234);
+    background: rgb(26, 25, 25);
     min-height: 100vh;
     top: 10%;
     display: flex;
@@ -19,61 +20,144 @@
 
 .download{
     border: 1px solid black;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     position: absolute;
-    top: 1%;
-    left: 90%;
-    color: black;
-    font-size: 12px;
+    top: 0.3%;
+    left: 75%;
+    color: rgb(255, 255, 255);
+    font-size: large;
     cursor: pointer;
-    background: white;
+    background: url('../../assets/skatePics/download.png');
+    background-color: rgba(0, 0, 0, 0.733);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+
+
 .download:hover{
-    border: 2px solid rgb(240, 233, 233);
     transition: ease-in-out .2s;
     font-weight: bold;
-    background: rgb(10, 10, 10);
-    color: rgb(243, 239, 239);
+    background-color: rgb(226, 193, 6);
+    color: rgb(0, 0, 0);
 }
 
 .sect{
-    border: 1px solid black;
-    width: 70vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    background: white;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .sectHead{
+    text-align: center;
     font-size: 40px;
     text-decoration: underline;
 }
 
 .map{
     border: 2px solid black;
-    width: 80%;
+    width: 60%;
     align-self: center;
     border-radius: 15px;
     margin-left: 10%;
 }
 
-.images{
+.images {
     border: 2px solid black;
     width: 32vw;
     height: 30vh;
     border-radius: 15px;
     margin-left: 10%;
     margin-right: 10%;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .txtCmd{
     font-size: 35px;
+}
+
+.navigation{
+    position: fixed;
+    width: 35vw;
+    background: rgba(7, 7, 7, 0.5);
+    height: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation:hover{
+    background: black;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-right: 1px solid white;
+    padding: 0 25px;
+}
+.navigation a:last-child {
+    border-right: none;
+}
+
+.navigation a:hover{
+    color: gold;
+}
+
+
+@media screen and (max-width: 900px){
+    .sect{
+        width: 100vw;
+    }
+
+    .txtCmd{
+        font-size: 24px;
+    }
+
+    .images{
+        border: 1px solid black;
+        width: 75vw;
+        height: 25vh;
+        border-radius: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        object-fit:fill;
+    }
+
+    .sectHead{
+        font-size: 38px;
+        text-decoration: underline;
+    }
+    
+    .navigation{
+        display: none;
+    }
+
+    .map{
+        border: .5px solid black;
+        width: 98vw;
+        height: 30vh;
+        border-radius: 15px;
+        margin: 0;
+    }
+
+    .download{
+        border: 1px solid black;
+        width: 40px;
+        height: 50px;
+    }
 }

@@ -37,7 +37,16 @@ export default function Tutorial() {
     return(
         <div className="Tutorial">
             <div className="contentTutor">
-                <div className="sect">
+                <div className="navigation">
+                    <a href="#pLayout">Layout</a>
+                    <a href="#pSetup">Setup</a>
+                    <a href="#pCarts">Carts</a>
+                    <a href="#pUnpack">Unpack</a>
+                    <a href="#pPlacement">Placement</a>
+                    <a href="#pFinishing">Finishing</a>
+                </div>
+                
+                <div className="sect" id="pLayout">
                     <h1 className="sectHead">Layout</h1>
                     <a
                         href={pdf}
@@ -46,15 +55,12 @@ export default function Tutorial() {
                         rel="noreferrer"
                     >
                         <div className="download">
-                            <span class="material-symbols-sharp">
-                                download
-                            </span>
                         </div>
-                        <img src={map} alt="Area layout" className="map" />
                     </a>
+                    <img src={map} alt="Area layout" className="map" />
                 </div>
 
-                <div className="sect">
+                <div className="sect" id="pSetup">
                     <h1 className="sectHead">Setup</h1>
                     <ul className="txtCmd">
                         <li>Open the door to the ice surface.</li>
@@ -70,7 +76,7 @@ export default function Tutorial() {
                     <img src={wood} alt="wood" className="images"/>
                 </div>
 
-                <div className="sect">
+                <div className="sect" id="pCarts">
                     <h1 className="sectHead">Carts</h1>
                     <ul className="txtCmd">
                         <li>4 carts are stored tightly, against the outside wall of the Zamboni room</li>
@@ -89,7 +95,7 @@ export default function Tutorial() {
                     <img src={cartWall} alt="wood" className="images"/>
                 </div>
 
-                <div className="sect">
+                <div className="sect" id="pUnpack">
                     <h1 className="sectHead">Unpacking marts (SAFETY FIRST)</h1>
                     <ul className="txtCmd">
                         <li>WORK TOGETHER! Do not move or lift a pad if it is to heavy for you</li>
@@ -104,7 +110,7 @@ export default function Tutorial() {
                     <img src={sidesMat} alt="wood" className="images"/>
                 </div>
 
-                <div className="sect">
+                <div className="sect" id="pPlacement">
                     <h1 className="sectHead">Placing marts (check order!)</h1>
                     <ul className="txtCmd">
                         <li>On the right hand side, starting at the blue line, place the ½ size pads (AKA: AdMats)</li>
@@ -129,7 +135,7 @@ export default function Tutorial() {
                     <img src={matSizes} alt="wood" className="images"/>
                 </div>
                 
-                <div className="sect">
+                <div className="sect" id="pFinishing">
                     <h1 className="sectHead">Finishing touches</h1>
                     <ul className="txtCmd">
                         <li>Move the carts off the ice.</li>

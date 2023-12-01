@@ -34,7 +34,7 @@ export default function Header() {
         </Link>
         <ul className="nav inactive" id="navigation">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="">Directions</Link></li>
+            <li><Link to="/directions">Directions</Link></li>
             <li><Link to="/tutorial">Tutorials</Link></li>
             <li><Link to="/volunteer">Volunteer</Link></li>
             <li onClick={changeSite}><Link to="">About</Link></li>
