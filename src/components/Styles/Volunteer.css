@@ -21,8 +21,10 @@
 .register label {
     position: relative;
     align-self: flex-start;
-    margin-top: 5%;
-    margin-left: 58px;
+    margin-top: 5vh;
+    margin-left: 4.5vw;
+    margin-bottom: 1vh;
+    font-weight: bold;
 }
 
 .formHead {
@@ -32,23 +34,25 @@
 .register input{
     position: relative;
     width: 70%;
+    height: 30px;
     margin-bottom: 2%;
     align-self: center;
-    margin-top: 5px;
+    margin-top: 3vh;
     border-top: none;
     border-right: none;
     border-left: none;
+    font-size: 25px;
 }
 
 #signup{
-    margin-top:20px;
-    width: 150px;
-    height: 40px;
+    margin-top:6vh;
+    width: 160px;
+    height: 50px;
     border: 0px;
     border-radius: 9px;
     background: #99FFFF;
     color: rgb(17, 17, 17);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     align-self: center;
     cursor: pointer;
@@ -87,7 +91,8 @@
     .register input{
         width: 80%;
         height: 30px;
-        border: 1px solid black;
+        font-size: 21px;
+        border-bottom: 1px solid black;
     }
 
     #signup{
