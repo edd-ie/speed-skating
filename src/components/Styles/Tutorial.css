@@ -2,7 +2,8 @@
     position: absolute;
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .contentTutor{
@@ -10,8 +11,10 @@
     min-width: 100vw;
     background: rgb(240, 234, 234);
     min-height: 100vh;
-    overflow-y: scroll;
     top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .download{
@@ -38,4 +41,39 @@
     font-weight: bold;
     background: rgb(10, 10, 10);
     color: rgb(243, 239, 239);
+}
+
+.sect{
+    border: 1px solid black;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectHead{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.map{
+    border: 2px solid black;
+    width: 80%;
+    align-self: center;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+.images{
+    border: 2px solid black;
+    width: 32vw;
+    height: 30vh;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit:fill;
+}
+
+.txtCmd{
+    font-size: 35px;
 }
