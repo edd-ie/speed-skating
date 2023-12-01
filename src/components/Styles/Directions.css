@@ -8,6 +8,7 @@
 .mapShowcase{
     width: 100vw;
     height: 94vh;
-    margin-top: 6vh;
+    margin-top: 10vh;
     background: black;
+    overflow: hidden;
 }

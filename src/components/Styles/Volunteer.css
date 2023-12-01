@@ -13,15 +13,15 @@
     display: flex;
     flex-direction: column;
     background: white;
-    width: 30%;
-    height: 60%;
+    width: 30vw;
+    height: 75vh;
     border-radius: 20px;
 }
 
 .register label {
     position: relative;
     align-self: flex-start;
-    margin-top: 5vh;
+    margin-top: 5%;
     margin-left: 4.5vw;
     margin-bottom: 1vh;
     font-weight: bold;
@@ -41,7 +41,7 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #signup{
