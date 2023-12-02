@@ -1,4 +1,4 @@
-# [Pockets](https://skatenb.vercel.app/)
+# [Skate NB](https://skatenb.vercel.app/)
 
 A web application that assists a skating organization to source volunteer to help with operations
 
