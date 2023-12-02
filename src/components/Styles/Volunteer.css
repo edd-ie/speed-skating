@@ -84,7 +84,7 @@
 
     .register label{
         margin-left: 10%;
-        margin-top: 15%;
+        margin-top: 10%;
         margin-bottom: 1%;
     }
 
@@ -100,7 +100,7 @@
         height: 10%;
         font-size: 30px;
         border: 1px solid black;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 }
 
