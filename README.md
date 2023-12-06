@@ -54,4 +54,5 @@ The project is built using the following technologies:
 
 - Front-end: React.js, React Router, Google maps
 - Styling: Pure CSS
-- Charting Libraries: Email.js
+- Email Library: Email.js
+- Database: Google sheets
