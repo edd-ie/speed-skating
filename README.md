@@ -15,7 +15,11 @@ A web application that assists a skating organization to source volunteer to hel
 
 ## <a id="Getting-started">Getting started</a>
 
-You can access the site on **[Skate NB](https://skatenb.vercel.app/)**
+You can access the site by clicking -> **[Skate NB](https://skatenb.vercel.app/)**
+
+Alternative scan this QR code
+
+![Alt text](./src/assets/webQR.png)
 
 ## <a id="feature">Features</a>
 
