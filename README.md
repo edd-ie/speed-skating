@@ -1,6 +1,6 @@
 # [Skate NB](https://skatenb.vercel.app/)
 
-A web application that assists a skating organization to source volunteer to help with operations
+A web application that assists Freeskate NB, a skating organization, to source volunteer to help with operations
 
 ## Table of Contents
 
